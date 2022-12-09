@@ -5,11 +5,12 @@ import io.cucumber.java.en.Given
 import io.cucumber.java.en.Then
 import io.cucumber.java.en.When
 import org.junit.Assert
+import org.junit.runner.RunWith
+import org.junit.runners.JUnit4
 import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import utils.TestUtilities
 import utils.findTextViewByText
-
 
 class MainScreenStepDefinition {
 
@@ -17,7 +18,7 @@ class MainScreenStepDefinition {
 
     @Given("App is running and home screen is shown")
     fun app_is_running_and_home_screen_is_shown() {
-        driver = AndroidDriver<WebElement>(TestUtilities.APPIUM_SERVER_URL, TestUtilities.getCapabilities())
+        driver = AndroidDriver<WebElement>(TestUtilities.APPIUM_SERVER_URL, TestUtilities.getAndroidCapabilities())
     }
 
     @Then("Check if all visible items are as expected")
