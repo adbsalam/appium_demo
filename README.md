@@ -1,5 +1,9 @@
 # appium_demo
 
+<p align="center" width="100%">
+    <img width="60%" src="stats.jpeg">
+</p>
+
 This demo is to show how appium is implemented. 
 
 Attached with this project is automation presentation with suggested action plans and details regarding cross-platform testing. 
