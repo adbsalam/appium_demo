@@ -21,7 +21,7 @@ class MainScreenTest {
     @Before
     @Throws(MalformedURLException::class)
     fun setUp() {
-        driver = AndroidDriver<WebElement>(TestUtilities.APPIUM_SERVER_URL, TestUtilities.getCapabilities())
+        driver = AndroidDriver<WebElement>(TestUtilities.APPIUM_SERVER_URL, TestUtilities.getAndroidCapabilities())
     }
 
     @Test
